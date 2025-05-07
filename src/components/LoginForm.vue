@@ -1,5 +1,5 @@
 <template>
-    <v-card class="pa-4" max-width="400" outlined>
+    <v-card class="pa-4" max-width="400" outlined style="direction: rtl;">
       <v-card-title class="headline">התחברות</v-card-title>
       <v-card-text>
         <v-form ref="form" @submit.prevent="login">
