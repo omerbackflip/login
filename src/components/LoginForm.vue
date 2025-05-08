@@ -3,25 +3,29 @@
       <v-card-title class="headline">התחברות</v-card-title>
       <v-card-text>
         <v-form ref="form" @submit.prevent="login">
-          <v-text-field
-            v-model="username"
-            label="שם משתמש"
-            prepend-icon="mdi-account"
-            outlined
-            dense
-            required
-          />
-          <v-text-field
-            v-model="password"
-            label="סיסמה"
-            type="password"
-            prepend-icon="mdi-lock"
-            outlined
-            dense
-            required
-          />
-          <v-btn block color="primary" @click="login">התחבר</v-btn>
-        </v-form>
+        <v-text-field
+          v-model="username"
+          label="שם משתמש"
+          name="username"
+          autocomplete="username"
+          prepend-icon="mdi-account"
+          outlined
+          dense
+          required
+        />
+        <v-text-field
+          v-model="password"
+          label="סיסמה"
+          name="password"
+          autocomplete="current-password"
+          type="password"
+          prepend-icon="mdi-lock"
+          outlined
+          dense
+          required
+        />
+        <v-btn color="primary" type="submit">התחבר</v-btn>
+      </v-form>
       </v-card-text>
     </v-card>
   </template>
